@@ -1,9 +1,13 @@
 body {
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif; }
 
 ul {
   list-style: none; }
+
+h1 {
+  font-weight: 400; }
 
 .gallery-list {
   display: flex;

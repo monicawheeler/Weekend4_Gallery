@@ -2,6 +2,7 @@ console.log('client.js sourced');
 
 var app = angular.module('galleryApp', []);
 
+// GalleryController for the images
 app.controller('GalleryController', ['$http', function($http){
     console.log('GalleryController loaded');
     const self = this;
@@ -36,8 +37,9 @@ app.controller('GalleryController', ['$http', function($http){
             description: 'My inquistive step-son, Prescott'
         }
     ];
-}]);
+}]); // end GalleryController
 
+// RatingController for the ratings
 app.controller('RatingController', ['$http', function(http){
     console.log('RatingController loaded');
     const self = this;
@@ -48,7 +50,6 @@ app.controller('RatingController', ['$http', function(http){
     // increase rating counter by 1
     self.increaseCount = function() {
         self.ratingCount += 1;
-        console.log('self.ratingCount', self.ratingCount);
         return self.ratingCount;
     }
-}]);
+}]); // end RatingController
