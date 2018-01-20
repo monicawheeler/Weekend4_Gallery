@@ -30,7 +30,8 @@ h1 {
   height: 300px;
   width: 300px;
   filter: grayscale(100%);
-  user-select: none; }
+  user-select: none;
+  box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4); }
   .gallery-image:hover {
     cursor: pointer; }
 

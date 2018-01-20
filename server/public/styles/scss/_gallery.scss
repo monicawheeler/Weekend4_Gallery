@@ -29,6 +29,7 @@ $pink: #f14579;
     width: $image-width;
     filter: grayscale(100%);
     user-select: none;
+	box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4);
     &:hover {
         cursor: pointer;
     }
