@@ -26,15 +26,15 @@
                         <p class="gallery-desc">{{image.description}}</p>
                     </div>
                     <div class="gallery-controls">
-                        <i class="fas fa-plus"></i>
-                        <i class="fas fa-minus" ng-show="galleryToggle"></i>
+                        <span ng-hide="galleryToggle"><i class="fas fa-plus"></i></span>
+                        <span ng-show="galleryToggle"><i class="fas fa-minus"></i></span>
                     </div>
                 </div>
                 <div class="gallery-rating" ng-controller="RatingController as vm">
                     <div class="gallery-rating-btn" ng-click="vm.increaseCount()">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <p class="gallery-rating-count">{{vm.ratingCount}}</p>
+                    <p class="gallery-rating-count">{{vm.ratingCount}} people like this</p>
                 </div>
             </li>
         </ul>
