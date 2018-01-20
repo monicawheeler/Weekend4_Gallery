@@ -1,4 +1,4 @@
-# Weekend4_Gallery
+# My Gallery App
 
 - `npm install` to start up the application
 - `npm start` to start up the server 
