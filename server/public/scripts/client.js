@@ -4,8 +4,9 @@ var app = angular.module('galleryApp', []);
 
 app.controller('GalleryController', ['$http', function($http){
     console.log('GalleryController loaded');
-    
-    let galleryImages = [
+    const self = this;
+
+    self.galleryImages = [
         {
             imagePath: 'images/grandma.jpg',
             description: 'My mom holding her first grandchild'
