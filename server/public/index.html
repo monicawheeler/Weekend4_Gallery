@@ -12,6 +12,14 @@
 <body ng-app="galleryApp">
     <main ng-controller="GalleryController as vm">
         <h1>my image gallery</h1>
+        <ul class="gallery-list">
+            <li class="gallery-item" ng-repeat="image in vm.galleryImages">
+                <img class="gallery-image" ng-src="{{image.imagePath}}" alt="">
+                <div class="gallery-caption">
+                    <p>{{image.description}}</p>
+                </div>
+            </li>
+        </ul>
     </main>
 </body>
 </html>

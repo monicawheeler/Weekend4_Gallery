@@ -7,5 +7,11 @@ h6 {
   font-family: serif;
   font-weight: 600; }
 
-.gallery {
-  display: flex; }
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.gallery-image {
+  height: 150px;
+  width: 150px;
+  filter: grayscale(100%); }
