@@ -1,0 +1,28 @@
+{
+  "name": "weekend4_gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "scss": "node-sass server/public/styles/scss -o server/public/styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monicawheeler/Weekend4_Gallery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monicawheeler/Weekend4_Gallery/issues"
+  },
+  "homepage": "https://github.com/monicawheeler/Weekend4_Gallery#readme",
+  "dependencies": {
+    "angular": "1.6.6",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node-sass": "^4.7.2",
+    "pg": "^7.4.1"
+  }
+}
