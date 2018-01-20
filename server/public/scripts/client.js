@@ -6,6 +6,10 @@ app.controller('GalleryController', ['$http', function($http){
     console.log('GalleryController loaded');
     const self = this;
 
+    // toggle states
+    self.galleryToggle = false;
+
+    // image gallery dataset
     self.galleryImages = [
         {
             imagePath: 'images/grandma.jpg',
@@ -32,4 +36,19 @@ app.controller('GalleryController', ['$http', function($http){
             description: 'My inquistive step-son, Prescott'
         }
     ];
+}]);
+
+app.controller('RatingController', ['$http', function(http){
+    console.log('RatingController loaded');
+    const self = this;
+
+    // rating counter
+    self.ratingCount = 0;
+
+    // increase rating counter by 1
+    self.increaseCount = function() {
+        self.ratingCount += 1;
+        console.log('self.ratingCount', self.ratingCount);
+        return self.ratingCount;
+    }
 }]);

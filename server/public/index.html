@@ -19,9 +19,21 @@
         <h1>my image gallery</h1>
         <ul class="gallery-list">
             <li class="gallery-item" ng-repeat="image in vm.galleryImages">
-                <img class="gallery-image" ng-src="{{image.imagePath}}" alt="">
-                <div class="gallery-caption">
-                    <p>{{image.description}}</p>
+                <div class="gallery-image-wrapper" ng-click="galleryToggle = !galleryToggle">
+                    <img class="gallery-image" ng-src="{{image.imagePath}}" alt="">
+                    <div class="gallery-caption" ng-show="galleryToggle">
+                        <p class="gallery-desc">{{image.description}}</p>
+                    </div>
+                    <div class="gallery-controls">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus" ng-show="galleryToggle"></i>
+                    </div>
+                </div>
+                <div class="gallery-rating" ng-controller="RatingController as vm">
+                    <div class="gallery-rating-btn" ng-click="vm.increaseCount()">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <p>{{vm.ratingCount}}</p>
                 </div>
             </li>
         </ul>
