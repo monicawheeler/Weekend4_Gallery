@@ -1,5 +1,5 @@
-$image-height: 200px;
-$image-width: 200px;
+$image-height: 300px;
+$image-width: 300px;
 $border-radius: 4px;
 
 // colors
@@ -28,6 +28,7 @@ $pink: #f14579;
     height: $image-height;
     width: $image-width;
     filter: grayscale(100%);
+    user-select: none;
     &:hover {
         cursor: pointer;
     }
@@ -48,17 +49,25 @@ $pink: #f14579;
 
 .gallery-desc {
     padding: 10px 40px 10px 20px;
+    user-select: none;
 }
 
 .gallery-rating {
     width: $image-width;
     margin: 0 auto;
+}
+
+.gallery-rating-btn {
     color: rgba($pink, .6);
     transition: all 250ms;
     &:hover {
         color: $pink;
         cursor: pointer;
     }
+}
+
+.gallery-rating-count {
+    user-select: none;
 }
 
 .gallery-controls {
