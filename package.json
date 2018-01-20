@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
-    "scss": "node-sass server/public/styles/scss -o server/public/styles/css"
+    "scss": "node-sass --watch server/public/styles/scss -o server/public/styles/css"
   },
   "repository": {
     "type": "git",

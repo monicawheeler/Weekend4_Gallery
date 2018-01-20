@@ -2,9 +2,5 @@
 
 - `npm install` to start up the application
 - `npm start` to start up the server 
+- Open a separate terminal and `npm run scss`
 - `localhost:5000` to view the project
-
-## Modifications to CSS? 
-- Stop the server
-- `npm run scss` to compile the Sass files into CSS
-- `npm start` to 
